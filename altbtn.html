@@ -15,24 +15,31 @@
             margin-left: -0.75rem;
             transform: translate(-50%, -50%);
             background: transparent;
+            padding: 0;
+            display: flex;
+            align-items: center;
         }
         #animationAllbtn:before{
+            top: 0;
+        }
+        #animationAllbtn:before,
+        #animationAllbtn:after{
             content: "";
             display: block;
             height: 3px;
+            width: 100%;
             background: #000;
+            position: absolute;
+            left: 0;
+        }
+        #animationAllbtn:after{
+            bottom: 0;
         }
         #animationAllbtn span{
             display: block;
             height: 3px;
             background: #000;
-            margin: 8px 0;
-        }
-        #animationAllbtn:after{
-            content: "";
-            display: block;
-            height: 3px;
-            background: #000;
+            width: 100%;
         }
     </style>
 </head>

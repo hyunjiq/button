@@ -13,8 +13,15 @@
     <!-- bi-x-lg -->
     <script>
         const allbtn = document.getElementById('allbtn');
+        let status = true;
         allbtn.addEventListener("click", function(){
-            allbtn.classList.toggle("bi-x-lg")
+            if(status){
+                allbtn.classList = "bi bi-list fs-1 bi-x-lg text-danger";
+                status = false;
+            }else{
+                allbtn.classList = "bi bi-list fs-1";
+                status = true;
+            }
         })
     </script>
 </body>
